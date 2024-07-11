@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="/intranet/icons/nti.ico" type="image/x-icon" />
+  <title>INTRANET COM FUNDO</title>
+</head>
+
+<body>
+  <header>
+    <h1>INTRANET IDAM</h1>
+    <h2>Acesse os principais links de serviços da instituição</h2>
+  </header>
+
+  <div class="gallery">
+    <button class="button"
+      onclick="window.open('https://login.microsoftonline.com/?whr=integra.am.gov.br/', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backIntegra.png')" onmouseout="resetBackground()">
+      <img src="images/icons/portalintegra.png" alt="logo portal integra" width="220px" />
+    </button>
+    <button class="button"
+      onclick="window.open('https://www.e-compras.am.gov.br/publico/', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backECompras.png')" onmouseout="resetBackground()">
+      <img src="images/icons/ecompras.png" alt="logo e-compras" width="200px" />
+    </button>
+    <button class="button" onclick="window.open('http://nti.idam.am.gov.br/glpi/', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backNTI.png')" onmouseout="resetBackground()">
+      <img src="images/icons/logoNTI.png" alt="logo idam" width="190px" />
+    </button>
+    <button class="button" onclick="window.open('https://www.sefaz.am.gov.br/', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backSefaz.png')" onmouseout="resetBackground()">
+      <img src="images/icons/sefaz.png" alt="logo sefaz" width="200px" />
+    </button>
+    <button class="button"
+      onclick="window.open('https://sistemas.sefaz.am.gov.br/siged/login', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backSiged.png')" onmouseout="resetBackground()">
+      <img src="images/icons/siged.png" alt="logo siged" width="190px" />
+    </button>
+    <button class="button" onclick="window.open('https://web.whatsapp.com/', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backWpp.png')" onmouseout="resetBackground()">
+      <img src="images/icons/whatsapp.png" alt="logo whatsapp" width="195px" />
+    </button>
+    <button class="button" onclick="window.open('http://www.ajuri.am.gov.br', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backAjuri.png')" onmouseout="resetBackground()">
+      <img src="images/icons/ajuri.png" alt="logo ajuri" width="155px" />
+    </button>
+    <button class="button" onclick="window.open('http://www.idam.am.gov.br', '_blank', 'noopener noreferrer');"
+      onmouseover="changeBackground('images/backgrounds/backIdam.png')" onmouseout="resetBackground()">
+      <img src="images/icons/siteIdam.png" alt="logo site idam" width="190px" />
+    </button>
+  </div>
+  <script>
+    function changeBackground(imageUrl) {
+      document.body.style.backgroundImage = `url(${imageUrl})`;
+    }
+
+    function resetBackground() {
+      document.body.style.backgroundImage = "none";
+    }
+  </script>
+</body>
+
+</html>
